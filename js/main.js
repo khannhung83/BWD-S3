@@ -302,7 +302,7 @@
                         <span class="time">Bây giờ</span>
                     </div>
                     <div class="avatar">
-                        <img src="images/user-avatar.jpg" alt="User">
+                        <img src="images/user2.png" alt="User">
                     </div>
                 </div>
             `;
@@ -318,7 +318,7 @@
                 const botMessage = `
                     <div class="chat-message bot">
                         <div class="avatar">
-                            <img src="images/logo.png" alt="Bot">
+                            <img src="images/bot.png" alt="Bot">
                         </div>
                         <div class="message">
                             <p>Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất có thể!</p>
