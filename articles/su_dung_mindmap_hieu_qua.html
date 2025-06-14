@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cách Sử Dụng Sơ Đồ Tư Duy (Mindmap) Hiệu Quả - Trung Tâm Gia Sư Nguyễn Kiều Thịnh</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Sơ đồ tư duy, mindmap, phương pháp học tập, ghi chú hiệu quả" name="keywords">
+    <meta content="Hướng dẫn chi tiết cách sử dụng sơ đồ tư duy (mindmap) hiệu quả để tối ưu hóa quá trình học tập và làm việc." name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    
+    <style>
+        .article-header {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
+            padding: 80px 0 60px;
+        }
+        
+        .article-content {
+            padding: 60px 0;
+            line-height: 1.8;
+        }
+        
+        .article-content h2 {
+            color: var(--primary);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .article-content h3 {
+            color: var(--dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        
+        .article-content p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: var(--secondary);
+        }
+        
+        .article-content ul {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        
+        .article-content li {
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        .article-meta {
+            background-color: var(--light);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            margin-bottom: 30px;
+        }
+        
+        .article-meta .meta-item {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 20px;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+        
+        .article-meta .meta-item i {
+            margin-right: 8px;
+            color: var(--primary);
+        }
+        
+        .back-to-blog {
+            margin-bottom: 30px;
+        }
+        
+        .back-to-blog a {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .back-to-blog a:hover {
+            color: var(--primary-dark);
+            transform: translateX(-5px);
+        }
+        
+        .back-to-blog a i {
+            margin-right: 8px;
+        }
+        
+        .related-articles {
+            background-color: var(--light);
+            padding: 40px 0;
+        }
+        
+        .related-article-card {
+            background: white;
+            border-radius: var(--radius-md);
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .related-article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .related-article-card h5 {
+            color: var(--dark);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .related-article-card p {
+            color: var(--secondary);
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .related-article-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .related-article-card a:hover {
+            color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header id="header" class="py-3 border-bottom">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <img src="../images/trungtamgiasu.png" alt="Logo" class="logo-img">
+                    <span class="logo-text">Trung Tâm Gia Sư</span>
+                </a>
+                <div class="nav-container">
+                    <nav class="navbar">
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="../index.html#home" class="nav-link">Trang Chủ</a></li>
+                            <li class="nav-item"><a href="../index.html#about" class="nav-link">Giới Thiệu</a></li>
+                            <li class="nav-item"><a href="../index.html#services" class="nav-link">Dịch Vụ</a></li>
+                            <li class="nav-item"><a href="../index.html#team" class="nav-link">Gia Sư</a></li>
+                            <li class="nav-item"><a href="../index.html#testimonials" class="nav-link">Đánh Giá</a></li>
+                            <li class="nav-item"><a href="../index.html#blog" class="nav-link active">Tin Tức</a></li>
+                            <li class="nav-item"><a href="../index.html#contact" class="nav-link">Liên Hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-actions">
+                    <div class="contact-info d-none d-lg-flex">
+                        <a href="tel:+84762500127" class="contact-link">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+84762500127</span>
+                        </a>
+                        <a href="mailto:thinhnk.24ceb021@vku.udn.vn" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>thinhnk.24ceb021@vku.udn.vn</span>
+                        </a>
+                    </div>
+                    <a href="../index.html#register" class="btn btn-primary btn-register">Đăng Ký Ngay</a>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Article Header Start -->
+    <section class="article-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="back-to-blog">
+                        <a href="../index.html#blog">
+                            <i class="fas fa-arrow-left"></i>
+                            Quay lại Tin Tức
+                        </a>
+                    </div>
+                    <h1 class="title">Cách Sử Dụng Sơ Đồ Tư Duy (Mindmap) Hiệu Quả</h1>
+                    <div class="article-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>14 tháng 6, 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>Trung Tâm Gia Sư</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>11 phút đọc</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Kỹ năng học tập</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article Header End -->
+
+    <!-- Article Content Start -->
+    <section class="article-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="content">
+                        <p class="lead">Trong học tập và công việc, việc tổ chức thông tin một cách logic và dễ hiểu là chìa khóa để nâng cao hiệu suất. Sơ đồ tư duy (Mindmap) là một công cụ trực quan mạnh mẽ, giúp chúng ta sắp xếp ý tưởng, ghi nhớ thông tin và phát triển tư duy sáng tạo.</p>
+
+                        <h2>1. Hiểu Rõ Cấu Trúc và Nguyên Lý Của Sơ Đồ Tư Duy</h2>
+                        
+                        <p>Trước khi bắt tay vào vẽ, việc hiểu rõ cấu trúc và nguyên lý hoạt động của sơ đồ tư duy là rất quan trọng. Một sơ đồ tư duy cơ bản bao gồm:</p>
+
+                        <ul>
+                            <li><strong>Ý tưởng trung tâm (Central Idea):</strong> Là chủ đề chính của sơ đồ, đặt ở giữa trang giấy hoặc màn hình. Ý tưởng này thường được thể hiện bằng một hình ảnh hoặc từ khóa nổi bật.</li>
+                            <li><strong>Các nhánh chính (Main Branches):</strong> Là những ý tưởng lớn, trực tiếp phát triển từ ý tưởng trung tâm. Mỗi nhánh chính thường đại diện cho một khía cạnh, một chương, hoặc một chủ đề con của ý tưởng trung tâm.</li>
+                            <li><strong>Các nhánh con (Sub-branches):</strong> Phát triển từ các nhánh chính, đi sâu vào chi tiết hơn. Các nhánh con có thể tiếp tục phân chia thành nhiều nhánh nhỏ hơn nữa.</li>
+                            <li><strong>Từ khóa (Keywords):</strong> Mỗi nhánh chỉ nên có một từ khóa hoặc một cụm từ ngắn gọn. Từ khóa giúp kích thích não bộ liên tưởng và ghi nhớ tốt hơn.</li>
+                            <li><strong>Hình ảnh và màu sắc (Images and Colors):</strong> Sử dụng hình ảnh và màu sắc đa dạng để làm nổi bật các ý tưởng, giúp sơ đồ trở nên sinh động và dễ nhớ hơn.</li>
+                        </ul>
+
+                        <p>Nguyên lý hoạt động của Mindmap dựa trên cách não bộ chúng ta xử lý thông tin – không theo tuyến tính mà theo dạng liên kết, phân nhánh. Việc sử dụng hình ảnh, màu sắc và từ khóa giúp kích hoạt cả hai bán cầu não, từ đó tăng cường khả năng ghi nhớ và sáng tạo.</p>
+
+                        <h2>2. Chuẩn Bị Công Cụ và Không Gian</h2>
+                        
+                        <p>Để tạo ra một sơ đồ tư duy hiệu quả, bạn cần chuẩn bị một số công cụ và không gian phù hợp.</p>
+
+                        <h3>Công cụ vẽ</h3>
+                        <ul>
+                            <li><strong>Giấy và bút màu:</strong> Đây là cách truyền thống và được khuyến khích nhất cho người mới bắt đầu. Sử dụng giấy A3 hoặc lớn hơn để có đủ không gian. Chuẩn bị nhiều bút màu khác nhau để phân biệt các nhánh và làm nổi bật từ khóa.</li>
+                            <li><strong>Phần mềm Mindmap:</strong> Nếu bạn muốn tạo sơ đồ tư duy trên máy tính hoặc thiết bị di động, có rất nhiều phần mềm hỗ trợ như XMind, MindMeister, Coggle, FreeMind, Miro. Các công cụ này giúp bạn dễ dàng chỉnh sửa, lưu trữ và chia sẻ sơ đồ.</li>
+                        </ul>
+
+                        <h3>Không gian học tập/làm việc</h3>
+                        <p>Chọn một không gian yên tĩnh, thoải mái, không bị xao nhãng. Đảm bảo đủ ánh sáng và không khí trong lành. Một không gian gọn gàng, ngăn nắp sẽ giúp bạn tập trung tốt hơn vào việc sắp xếp ý tưởng.</p>
+
+                        <h2>3. Các Bước Vẽ Sơ Đồ Tư Duy Hiệu Quả</h2>
+                        
+                        <p>Thực hiện theo các bước sau để tạo một sơ đồ tư duy hoàn chỉnh và hiệu quả:</p>
+
+                        <h3>Bước 1: Bắt đầu với ý tưởng trung tâm</h3>
+                        <p>Đặt chủ đề chính (ý tưởng trung tâm) ở giữa trang giấy. Sử dụng một hình ảnh hoặc một từ khóa nổi bật, có thể vẽ thêm các biểu tượng, màu sắc để làm cho nó thật ấn tượng và dễ nhớ. Ví dụ, nếu chủ đề là "Học tốt môn Toán", bạn có thể vẽ một cuốn sách Toán với các con số và ký hiệu.</p>
+
+                        <h3>Bước 2: Phát triển các nhánh chính</h3>
+                        <p>Từ ý tưởng trung tâm, vẽ các nhánh chính tỏa ra như những cành cây. Mỗi nhánh chính đại diện cho một ý lớn, một khía cạnh quan trọng của chủ đề. Ví dụ, từ "Học tốt môn Toán", các nhánh chính có thể là "Lý thuyết", "Bài tập", "Phương pháp học", "Tâm lý".</p>
+
+                        <ul>
+                            <li><strong>Sử dụng đường cong:</strong> Các nhánh nên là đường cong thay vì đường thẳng để kích thích não bộ và làm sơ đồ sinh động hơn.</li>
+                            <li><strong>Mỗi nhánh một màu:</strong> Gán một màu sắc riêng cho mỗi nhánh chính để dễ dàng phân biệt và ghi nhớ.</li>
+                            <li><strong>Viết từ khóa trên nhánh:</strong> Chỉ viết một từ khóa hoặc cụm từ ngắn gọn trên mỗi nhánh. Từ khóa nên được viết in hoa hoặc chữ lớn để dễ đọc.</li>
+                        </ul>
+
+                        <h3>Bước 3: Thêm các nhánh con và chi tiết</h3>
+                        <p>Từ mỗi nhánh chính, tiếp tục vẽ các nhánh con để đi sâu vào chi tiết. Các nhánh con này sẽ phát triển từ từ khóa trên nhánh chính. Ví dụ, từ nhánh "Lý thuyết", các nhánh con có thể là "Định nghĩa", "Công thức", "Định lý".</p>
+
+                        <ul>
+                            <li><strong>Sử dụng màu sắc tương đồng:</strong> Các nhánh con nên có màu sắc tương đồng với nhánh chính mà chúng thuộc về.</li>
+                            <li><strong>Từ khóa ngắn gọn:</strong> Tiếp tục sử dụng từ khóa ngắn gọn, súc tích. Có thể sử dụng chữ nhỏ hơn so với nhánh chính.</li>
+                            <li><strong>Thêm hình ảnh, biểu tượng:</strong> Bổ sung các hình ảnh, biểu tượng nhỏ liên quan đến từ khóa để tăng cường khả năng ghi nhớ trực quan.</li>
+                        </ul>
+
+                        <h3>Bước 4: Kết nối các ý tưởng (nếu cần)</h3>
+                        <p>Đôi khi, có những ý tưởng ở các nhánh khác nhau lại có mối liên hệ với nhau. Bạn có thể sử dụng các đường mũi tên hoặc ký hiệu để nối chúng lại, kèm theo một từ khóa ngắn gọn giải thích mối liên hệ đó. Điều này giúp bạn nhìn thấy bức tranh tổng thể và các mối quan hệ phức tạp giữa các khái niệm.</p>
+
+                        <h3>Bước 5: Thêm hình ảnh và màu sắc</h3>
+                        <p>Sử dụng màu sắc đa dạng và hình ảnh phong phú xuyên suốt sơ đồ. Màu sắc giúp phân loại thông tin và kích thích thị giác. Hình ảnh giúp bạn ghi nhớ thông tin tốt hơn gấp nhiều lần so với chữ viết đơn thuần.</p>
+
+                        <h2>4. Ứng Dụng Sơ Đồ Tư Duy Trong Học Tập và Công Việc</h2>
+                        
+                        <p>Sơ đồ tư duy có thể được ứng dụng rộng rãi trong nhiều lĩnh vực khác nhau:</p>
+
+                        <h3>Trong học tập</h3>
+                        <ul>
+                            <li><strong>Ghi chú bài giảng:</strong> Thay vì ghi chép theo kiểu truyền thống, hãy sử dụng sơ đồ tư duy để tóm tắt ý chính của bài giảng, giúp bạn hiểu và ghi nhớ nhanh hơn.</li>
+                            <li><strong>Ôn tập và tổng hợp kiến thức:</strong> Sau khi học xong một chương hoặc một môn, hãy vẽ sơ đồ tư duy để tổng hợp lại toàn bộ kiến thức, giúp bạn nhìn thấy mối liên hệ giữa các phần và ôn tập hiệu quả.</li>
+                            <li><strong>Chuẩn bị bài thuyết trình:</strong> Sơ đồ tư duy giúp bạn sắp xếp các ý tưởng cho bài thuyết trình một cách logic, từ đó xây dựng nội dung mạch lạc và dễ hiểu.</li>
+                            <li><strong>Giải quyết vấn đề:</strong> Khi gặp một vấn đề phức tạp, hãy dùng sơ đồ tư duy để phân tích các khía cạnh, nguyên nhân và các giải pháp khả thi.</li>
+                        </ul>
+
+                        <h3>Trong công việc</h3>
+                        <ul>
+                            <li><strong>Lên kế hoạch dự án:</strong> Sơ đồ tư duy giúp bạn phác thảo các giai đoạn, nhiệm vụ, nguồn lực và thời hạn của một dự án.</li>
+                            <li><strong>Động não (Brainstorming):</strong> Đây là công cụ tuyệt vời để ghi lại tất cả các ý tưởng nảy sinh trong một buổi động não, không bỏ sót bất kỳ ý tưởng nào.</li>
+                            <li><strong>Quản lý công việc:</strong> Sơ đồ tư duy có thể được dùng để theo dõi các nhiệm vụ, ưu tiên công việc và quản lý thời gian hiệu quả.</li>
+                            <li><strong>Viết báo cáo, bài luận:</strong> Giúp bạn tổ chức các ý chính, luận điểm và bằng chứng trước khi bắt tay vào viết.</li>
+                        </ul>
+
+                        <h2>5. Những Lưu Ý Để Sử Dụng Sơ Đồ Tư Duy Hiệu Quả Hơn</h2>
+                        
+                        <p>Để tối đa hóa lợi ích của sơ đồ tư duy, hãy ghi nhớ những điều sau:</p>
+
+                        <ul>
+                            <li><strong>Không giới hạn ý tưởng:</strong> Đừng ngại viết ra tất cả những gì nảy ra trong đầu, dù chúng có vẻ không liên quan. Bạn có thể sắp xếp lại sau.</li>
+                            <li><strong>Càng đơn giản càng tốt:</strong> Tránh nhồi nhét quá nhiều thông tin vào một nhánh. Hãy giữ cho từ khóa ngắn gọn và súc tích.</li>
+                            <li><strong>Thường xuyên xem lại và cập nhật:</strong> Sơ đồ tư duy không phải là một sản phẩm tĩnh. Hãy thường xuyên xem lại, bổ sung hoặc chỉnh sửa khi có thông tin mới.</li>
+                            <li><strong>Thực hành thường xuyên:</strong> Giống như bất kỳ kỹ năng nào khác, việc vẽ sơ đồ tư duy cũng cần được thực hành thường xuyên để trở nên thành thạo.</li>
+                            <li><strong>Tạo phong cách riêng:</strong> Mỗi người có một cách tư duy khác nhau, vì vậy hãy tạo cho mình một phong cách vẽ sơ đồ tư duy riêng, phù hợp với bản thân.</li>
+                        </ul>
+
+                        <div class="alert alert-success mt-4" role="alert">
+                            <h5><i class="fas fa-lightbulb me-2"></i>Kết luận</h5>
+                            <p class="mb-0">Sơ đồ tư duy là một công cụ đa năng và hiệu quả, giúp chúng ta tổ chức thông tin, kích thích sáng tạo và nâng cao khả năng ghi nhớ. Bằng cách áp dụng đúng các nguyên tắc và thực hành thường xuyên, bạn sẽ biến sơ đồ tư duy thành một trợ thủ đắc lực trong học tập và công việc, giúp bạn đạt được những thành công vượt trội. Hãy bắt đầu vẽ sơ đồ tư duy ngay hôm nay và khám phá sức mạnh của nó!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Article Content End -->
+
+    <!-- Related Articles Start -->
+    <section class="related-articles">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Bài Viết Liên Quan</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="related-article-card">
+                        <h5>5 Bí Quyết Giúp Học Sinh Cấp 3 Tự Học Hiệu Quả</h5>
+                        <p>Khám phá những bí quyết vàng giúp học sinh cấp 3 tự học hiệu quả tại nhà.</p>
+                        <a href="tu_hoc_hieu_qua.html">Đọc thêm <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="related-article-card">
+                        <h5>Làm Sao Để Vượt Qua Nỗi Sợ Môn Hóa Học?</h5>
+                        <p>Khám phá những bí quyết giúp bạn vượt qua nỗi sợ môn Hóa học và biến nó thành môn học yêu thích.</p>
+                        <a href="vuot_qua_noi_so_hoa_hoc.html">Đọc thêm <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="related-article-card">
+                        <h5>Chuẩn Bị Tâm Lý Vững Vàng Cho Kỳ Thi Vào Lớp 10</h5>
+                        <p>Hướng dẫn cách chuẩn bị tâm lý hiệu quả cho kỳ thi quan trọng này.</p>
+                        <a href="tam_ly_ky_thi_lop_10.html">Đọc thêm <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="related-article-card">
+                        <h5>Lợi Ích Của Việc Học Gia Sư 1 Kèm 1</h5>
+                        <p>Tìm hiểu những lợi ích vượt trội của hình thức học gia sư 1 kèm 1.</p>
+                        <a href="loi_ich_gia_su_1_kem_1.html">Đọc thêm <i class="fas fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Articles End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-about">
+                        <h4 class="mb-3">Trung Tâm Gia Sư Nguyễn Kiều Thịnh</h4>
+                        <p>Chúng tôi cam kết mang đến dịch vụ gia sư chất lượng cao, giúp học sinh đạt được thành tích xuất sắc trong học tập.</p>
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="mb-3">Liên Kết</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html#home" class="text-white-50">Trang Chủ</a></li>
+                        <li><a href="../index.html#about" class="text-white-50">Giới Thiệu</a></li>
+                        <li><a href="../index.html#services" class="text-white-50">Dịch Vụ</a></li>
+                        <li><a href="../index.html#contact" class="text-white-50">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="mb-3">Dịch Vụ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Gia Sư Toán</a></li>
+                        <li><a href="#" class="text-white-50">Gia Sư Lý</a></li>
+                        <li><a href="#" class="text-white-50">Gia Sư Hóa</a></li>
+                        <li><a href="#" class="text-white-50">Gia Sư Anh Văn</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Liên Hệ</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> +84762500127</p>
+                        <p><i class="fas fa-envelope me-2"></i> thinhnk.24ceb021@vku.udn.vn</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Đà Nẵng, Việt Nam</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Trung Tâm Gia Sư Nguyễn Kiều Thịnh. Tất cả quyền được bảo lưu.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Chính Sách Bảo Mật</a>
+                    <a href="#" class="text-white-50">Điều Khoản Sử Dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
+
