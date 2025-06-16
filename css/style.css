@@ -1484,6 +1484,19 @@ textarea.form-control {
     font-weight: 500;
 }
 
+.footer-contact-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px; /* khoảng cách giữa các mục liên hệ */
+    flex-wrap: wrap; /* tự động xuống dòng nếu không đủ chỗ */
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .footer-contact p {
     display: flex;
     align-items: center;
