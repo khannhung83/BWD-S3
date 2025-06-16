@@ -438,22 +438,25 @@
                         </div>
                         
                         <!-- Form -->
-                        <form id="registerForm" novalidate>
+                        <form id="registerForm" method="POST" action="https://formsubmit.co/hotboy1142@gmail.com" novalidate>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="📩 Đơn đăng ký học gia sư mới từ website!">
+                            <input type="hidden" name="_template" value="box">
                             <!-- Step 1: Parent Info -->
                             <div class="form-step active" data-step="1">
                                 <h3 class="form-step-title text-center mb-4">Thông Tin Phụ Huynh</h3>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="parentName" placeholder="Họ và tên phụ huynh" required>
+                                    <input type="text" class="form-control" id="parentName" name="Tên phụ huynh" placeholder="Họ và tên phụ huynh" required>
                                     <label for="parentName">Họ và tên phụ huynh *</label>
                                     <div class="invalid-feedback">Vui lòng nhập tên phụ huynh.</div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="parentPhone" placeholder="Số điện thoại" required>
+                                    <input type="tel" class="form-control" id="parentPhone" name="SĐT phụ huynh" placeholder="Số điện thoại" required>
                                     <label for="parentPhone">Số điện thoại *</label>
                                     <div class="invalid-feedback">Vui lòng nhập số điện thoại.</div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="parentEmail" placeholder="Email">
+                                    <input type="email" class="form-control" id="parentEmail" name="Email phụ huynh" placeholder="Email">
                                     <label for="parentEmail">Email</label>
                                 </div>
                                 <div class="form-buttons d-flex justify-content-end">
@@ -465,12 +468,12 @@
                             <div class="form-step" data-step="2">
                                 <h3 class="form-step-title text-center mb-4">Thông Tin Học Sinh</h3>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="studentName" placeholder="Họ và tên học sinh" required>
+                                    <input type="text" class="form-control" id="studentName" name="Tên học sinh" placeholder="Họ và tên học sinh" required>
                                     <label for="studentName">Họ và tên học sinh *</label>
                                     <div class="invalid-feedback">Vui lòng nhập tên học sinh.</div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <select class="form-select" id="studentGrade" required>
+                                    <select class="form-select" id="studentGrade" name="Lớp học sinh" required>
                                         <option selected disabled value="">Chọn lớp</option>
                                         <option value="6">Lớp 6</option>
                                         <option value="7">Lớp 7</option>
@@ -488,7 +491,7 @@
                                     <div class="invalid-feedback">Vui lòng chọn lớp.</div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="studentSchool" placeholder="Trường đang học">
+                                    <input type="text" class="form-control" id="studentSchool" name="Trường đang học" placeholder="Trường đang học">
                                     <label for="studentSchool">Trường đang học</label>
                                 </div>
                                 <div class="form-buttons d-flex justify-content-between">
@@ -501,7 +504,7 @@
                             <div class="form-step" data-step="3">
                                 <h3 class="form-step-title text-center mb-4">Yêu Cầu Gia Sư</h3>
                                 <div class="form-floating mb-3">
-                                    <select class="form-select" id="subject" required>
+                                    <select class="form-select" id="subject" name="Môn học" required>
                                         <option selected disabled value="">Chọn môn học</option>
                                         <option value="Toan">Toán</option>
                                         <option value="Ly">Vật Lý</option>
@@ -515,18 +518,13 @@
                                     <div class="invalid-feedback">Vui lòng chọn môn học.</div>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Yêu cầu cụ thể (vd: Luyện thi vào lớp 10, mất gốc môn Lý, ...)" id="requirements" style="height: 100px"></textarea>
+                                    <textarea class="form-control" id="requirements" name="Yêu cầu gia sư" placeholder="Yêu cầu cụ thể" style="height: 100px"></textarea>
                                     <label for="requirements">Yêu cầu cụ thể</label>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="agreeTerms" required>
-                                    <label class="form-check-label" for="agreeTerms">
-                                        Tôi đồng ý với <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">điều khoản dịch vụ</a> *
-                                    </label>
-                                    <div class="invalid-feedback">Bạn cần đồng ý với điều khoản.</div>
-                                </div>
+                                
                                 <div class="form-buttons d-flex justify-content-between">
                                     <button type="button" class="btn btn-outline prev-step" data-prev="2"><i class="fas fa-arrow-left me-1"></i> Quay Lại</button>
+                                    
                                     <button type="submit" class="btn btn-primary">Hoàn Tất Đăng Ký <i class="fas fa-check ms-1"></i></button>
                                 </div>
                             </div>
@@ -1001,30 +999,34 @@
                     <div class="contact-form-wrapper bg-white p-4 p-md-5 rounded shadow-sm h-100">
                         <h3 class="h4 mb-3">Gửi Tin Nhắn Cho Chúng Tôi</h3>
                         <p class="text-muted mb-4">Chúng tôi sẽ phản hồi bạn trong thời gian sớm nhất.</p>
-                        <form id="contactForm" novalidate>
+                            <form id="contactForm" method="POST" action="https://formsubmit.co/hotboy1142@gmail.com" novalidate>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_subject" value="📩 Đơn đăng ký học gia sư mới từ website!">
+                            <input type="hidden" name="_template" value="box">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="contactName" placeholder="Họ và tên" required>
+                                        <input type="text" class="form-control" id="contactName" name="Tên học sinh" placeholder="Họ và tên" required>
                                         <label for="contactName">Họ và tên *</label>
                                         <div class="invalid-feedback">Vui lòng nhập tên của bạn.</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="contactEmail" placeholder="Email" required>
+                                        <input type="email" class="form-control" id="contactEmail" name="Email" placeholder="Email" required>
                                         <label for="contactEmail">Email *</label>
                                         <div class="invalid-feedback">Vui lòng nhập địa chỉ email hợp lệ.</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="contactSubject" placeholder="Tiêu đề" required>
+                                <input type="text" class="form-control" id="contactSubject" name="Tên học sinh" placeholder="Tiêu đề" required>
                                 <label for="contactSubject">Tiêu đề *</label>
                                 <div class="invalid-feedback">Vui lòng nhập tiêu đề.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" placeholder="Nội dung tin nhắn" id="contactMessage" style="height: 150px" required></textarea>
+                                <textarea class="form-control" placeholder="Nội dung tin nhắn" id="contactMessage" name="Nội dung" style="height: 150px" required></textarea>
+                                
                                 <label for="contactMessage">Nội dung tin nhắn *</label>
                                 <div class="invalid-feedback">Vui lòng nhập nội dung tin nhắn.</div>
                             </div>
@@ -1047,7 +1049,7 @@
                         <div class="footer-widget about-widget">
                             <div class="footer-logo d-flex align-items-center mb-3">
                                 <!-- Add actual logo path -->
-                                <img src="images/logo-white.png" alt="Logo" height="40" class="me-2">
+                                <img src="images/trungtamgiasu1.png" alt="Logo" height="40" class="me-2">
                                 <h3 class="h5 mb-0 text-white">Trung Tâm Gia Sư</h3>
                             </div>
                             <p class="text-white-50">Trung tâm gia sư uy tín tại Đà Nẵng, cung cấp giải pháp học tập hiệu quả cho mọi cấp học.</p>
@@ -1224,6 +1226,32 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Bạn cần đoạn này để chép dữ liệu vào các input hidden
+document.getElementById("registerForm").addEventListener("submit", function (e) {
+    // Lấy dữ liệu người dùng nhập
+    const parentName = document.getElementById("parentName").value;
+    const parentPhone = document.getElementById("parentPhone").value;
+    const parentEmail = document.getElementById("parentEmail").value;
+    const studentName = document.getElementById("studentName").value;
+    const studentGrade = document.getElementById("studentGrade").value;
+    const studentSchool = document.getElementById("studentSchool").value;
+    const subject = document.getElementById("subject").value;
+    const requirements = document.getElementById("requirements").value;
+
+    // Gán dữ liệu vào các trường hidden
+    const form = e.target;
+    form.querySelector('input[name="Tên phụ huynh"]').value = parentName;
+    form.querySelector('input[name="SĐT phụ huynh"]').value = parentPhone;
+    form.querySelector('input[name="Email phụ huynh"]').value = parentEmail;
+    form.querySelector('input[name="Tên học sinh"]').value = studentName;
+    form.querySelector('input[name="Lớp học sinh"]').value = studentGrade;
+    form.querySelector('input[name="Trường đang học"]').value = studentSchool;
+    form.querySelector('input[name="Môn học"]').value = subject;
+    form.querySelector('input[name="Yêu cầu gia sư"]').value = requirements;
+});
+
+    </script>
 </body>
 
 </html>
